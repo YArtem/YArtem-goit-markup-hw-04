@@ -194,6 +194,9 @@ body {
     url(../images/people-office.jpg);
   /* робимо, щоб зображення не вилазило за розміри секції */
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 
   /* ------робимо відступи з гори та низу для секції хіро----- */
   padding-top: 188px;
