@@ -120,6 +120,8 @@ body {
 
 .header-pages {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* --------  логотип -------- */
 .logo {
@@ -284,7 +286,22 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+/* ---- Задаємо рамку іконок принципів ----- */
 
+.principies-item-icon {
+  border: 1px solid #8e8f99;
+}
+
+/* ------ Задаємо стилі іконок принципів -----  */
+.principies-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 /* ====== ==== === Секція ми робимо === ==== ====== */
 /* ---- задаємо відступ з низу секції --- */
 .wedoing {
@@ -355,9 +372,9 @@ body {
 /* задаємо контейнеру співробітника відступи від його фото */
 .workers-container {
   padding-top: 32px;
-  padding-right: 16px;
+  padding-right: 0px;
   padding-bottom: 32px;
-  padding-left: 16px;
+  padding-left: 0px;
 }
 /* Задаємо стилі ПІП (заголовку) карточки співробітника */
 .team-list-item-title {
@@ -389,7 +406,7 @@ body {
   display: flex;
   /* вирівнюємо по центру та робимо відступи між ними та з гори */
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
   margin-top: 8px;
 }
 /* робимо посилання круглими, Задаємо стилі*/
@@ -404,7 +421,15 @@ body {
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* ----- Робимо ховер та фокус іконкам соцмереж ----- */
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
 
+.social-icon {
+  fill: #f4f4fd;
+}
 /* ====== ==== === Новаа секція -*Клієнти*- === ==== ======= */
 
 .customers {
@@ -420,7 +445,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-color);
   text-align: center;
@@ -431,20 +456,30 @@ body {
 .customers-list {
   display: flex;
   color: var(--customers-color);
+  gap: 24px;
 
   /* вирівнюємо по центру та робимо відступи між ними та з гори */
   justify-content: center;
-  column-gap: 24px;
 }
 
 /* --- задаємо розміри іконок --- */
-.customers-list-item {
+.customers-link {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--customers-color);
+  border: 1px solid #8e8f99;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.customers-list .customers-list-item {
+  width: 168px;
+  height: 88px;
+  /* border: 1px solid var(--customers-color);
+  border-radius: 4px; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 16px 32px 16px 32px;
+  /* padding: 16px 32px 16px 32px; */
 }
 .customers-list-item-icon {
   width: 104px;
