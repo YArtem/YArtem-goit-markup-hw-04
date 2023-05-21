@@ -526,6 +526,16 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  gap: 120px;
+}
+.footer-social-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 /* =============== сторінка портфоліо ============== */
