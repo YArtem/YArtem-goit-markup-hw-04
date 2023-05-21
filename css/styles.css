@@ -289,7 +289,7 @@ body {
 /* ---- Задаємо рамку іконок принципів ----- */
 
 .principies-item-icon {
-  border: 1px solid #8e8f99;
+  /* border: 1px solid #8e8f99; */
 }
 
 /* ------ Задаємо стилі іконок принципів -----  */
@@ -484,8 +484,13 @@ body {
 .customers-list-item-icon {
   width: 104px;
   height: 56px;
+  fill: currentColor;
 }
-
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
 /* ====== ==== === Футер === ==== ====== */
 /* --- ---- задаємо відступи з гори та низу внутрі секції
  та колір заднього фону --- */
@@ -515,6 +520,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+/* Робимо футер флексом */
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 /* =============== сторінка портфоліо ============== */
